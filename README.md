@@ -18,6 +18,6 @@
 # Χρήσιμοι σύνδεσμοι
 - Πλήρες resource σχετικά με Web Development: [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
 - Πληροφορίες σχετικά με το PokeAPI: [https://pokeapi.co/](https://pokeapi.co/)
-- Endpoint με την λίστα των πρώτων 30 Pokemon: [https://pokeapi.co/api/v2/pokemon?limit=151](https://pokeapi.co/api/v2/pokemon?limit=30)
+- Endpoint με την λίστα των πρώτων 30 Pokemon: [https://pokeapi.co/api/v2/pokemon?limit=30](https://pokeapi.co/api/v2/pokemon?limit=30)
 - Endpoint με περισσότερες πληροφορίες για συγκεκριμένο Pokemon:
 [https://pokeapi.co/api/v2/pokemon/1/](https://pokeapi.co/api/v2/pokemon/1/)
