@@ -54,10 +54,16 @@ function getIcon(str: string) {
   }
 }
 
-const DrawerItems: React.FC<Pokemon> = (pokemon) => {
+//add a callback function to the props so that the parent component can be notified when the favorite button is clicked
+interface DrawerItemsProps {
+  pokemon: Pokemon;
+  favoriteAction: () => void;
+}
 
+const DrawerItems: React.FC<DrawerItemsProps> = ({ pokemon, favoriteAction }) => {
   function favoritePokemon() {
     toggleFavoritePokemon(pokemon.id);
+    favoriteAction();
   }
 
   return (

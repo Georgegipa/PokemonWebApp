@@ -6,6 +6,7 @@ import {
   Container,
   Drawer,
   Grid,
+  Snackbar,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -19,6 +20,7 @@ function App() {
   //use state to store the pokemon data in an array
   const [pokemons, setPokemon] = useState<Pokemon[]>([]);
   const [open, setOpen] = useState(false);
+  const [favoriteSnackbar, setFavoriteSnackbar] = useState(false);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon>(
     {} as Pokemon
   );
@@ -61,6 +63,10 @@ function App() {
     });
   }
 
+  function onFavorite() {
+    setFavoriteSnackbar(true);
+  }
+
   return (
     //react fragment
     <>
@@ -70,7 +76,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
-        <DrawerItems {...selectedPokemon} />
+        <DrawerItems pokemon={selectedPokemon} favoriteAction={onFavorite} />
       </Drawer>
       <main>
         <div>
@@ -81,6 +87,12 @@ function App() {
               {generateGrid(sortPokemon(false))}
             </Grid>
           </Container>
+          <Snackbar
+              open={favoriteSnackbar}
+              autoHideDuration={1000}
+              onClose={() => setFavoriteSnackbar(false)}
+              message={getFavoritePokemon().includes(selectedPokemon.id) ? "Added to favorites" : "Removed from favorites"}
+            />
         </div>
       </main>
       <footer>
