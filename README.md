@@ -1,23 +1,30 @@
-# web-dev-assignment
+# PROothisiGR web-dev-assignment
 
-# Οδηγίες
-Σκοπός αυτής της σύντομης άσκησης είναι να αναπτυχθεί μια Web εφαρμογή όπου τραβάει δεδομένα για τα πρώτα 30 Pokemon και τα εμφανίζει, ο χρήστης στην συνέχεια μπορεί να επιλέξει ένα Pokemon και να εμφανιστούν επιπλέον πληροφορίες για το Pokemon.
+Create a web application that displays a list of the first 30 Pokemons from the [PokéAPI](https://pokeapi.co/).
+The application should have the following features:
 
-Πιο συγκεκριμένα η Web εφαρμογή θα πρέπει να τηρεί τις εξής προδιαγραφές:
-- [ ] Θα πρέπει να κάνετε fork το παρών repository και να δουλέψετε πάνω σε αυτό. **Η δομή του repository είναι ενδεικτική και δεν απαιτείται να την ακολουθήσετε.**
-- [ ] Η αρχική σελίδα της εφαρμογής θα πρέπει να αντλεί τα πρώτα 30 Pokemon από το αντίστοιχο API (pokeapi.co/api/v2/pokemon, υπάρχει link παρακάτω) και να τα εμφανίζει.
-- [ ] Για κάθε Pokemon της λίστας θέλουμε να εμφανίζεται το **όνομα** του και μια **εικόνα του (sprite)**.
-- [ ] Να υπάρχει η δυνατότητα όταν επιλεγεί ένα Pokemon να εμφανίστουν επιπλέον πληροφορίες για το Pokemon. Για παράδειγμα ύψος, βάρος, και είδος (type).
-- [ ] **Bonus**: Να μπορεί ο χρήστης να επιλέξει τα αγαπημένα του Pokemon, ώστε να τα βλέπει στην αρχή της λίστας.
-- [ ] Η Web εφαρμογή θα πρέπει να είναι responsive.
-- [ ] Ο κώδικας θα πρέπει να έχει σαφή σχόλια όπου χρειάζεται.
-- [ ] Αν χρησιμοποιήσετε κάποιο framework ή βιβλιοθήκη που θέλει setup, για παράδειγμα NPM, Webpack, Vite, θα πρέπει να έχετε τις απαραίτητες οδηγίες στο README.md για το πως θα τρέξουμε το project.
+- Display a list of Pokemons (name & image)
+- Display the details of a Pokemon when clicked on *currently displayed name,image,types,height,weight and stats*
+- Favorite a Pokemon and display it at the top of the list
+- Must be responsive
 
-Μπορείτε να χρησιμοποιήσετε οποιοδήποτε εργαλείο και framework θέλετε.
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Χρήσιμοι σύνδεσμοι
-- Πλήρες resource σχετικά με Web Development: [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
-- Πληροφορίες σχετικά με το PokeAPI: [https://pokeapi.co/](https://pokeapi.co/)
-- Endpoint με την λίστα των πρώτων 30 Pokemon: [https://pokeapi.co/api/v2/pokemon?limit=30](https://pokeapi.co/api/v2/pokemon?limit=30)
-- Endpoint με περισσότερες πληροφορίες για συγκεκριμένο Pokemon:
-[https://pokeapi.co/api/v2/pokemon/1/](https://pokeapi.co/api/v2/pokemon/1/)
+To run the project, you need to have Node.js installed on your machine. You can download it from [here](https://nodejs.org/en/download/).
+
+Once you have Node.js installed, you can run the following commands in the project directory:
+
+### `npm install`
+
+Installs all the dependencies required for the project and runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Technologies used
+
+- React
+- Typescript
+- Material UI (for styling)
+- React Icons (for icons)
+
+
+<a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokeball icon created by Freepik - Flaticon</a>
