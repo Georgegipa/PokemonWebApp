@@ -1,12 +1,14 @@
 # PROothisiGR web-dev-assignment
 
-Create a web application that displays a list of the first 30 Pokemons from the [PokéAPI](https://pokeapi.co/).
+Create a web application that displays a list of the first 30 Pokémons from the [PokéAPI](https://pokeapi.co/).
 The application should have the following features:
 
-- Display a list of Pokemons (name & image)
-- Display the details of a Pokemon when clicked on *currently displayed name,image,types,height,weight and stats*
-- Favorite a Pokemon and display it at the top of the list
+- Display a list of 30 Pokémon (name & image)
+- Display the details of a Pokémon when clicked on *currently displayed name,image,types,height,weight and stats*
+- Favorite a Pokémon and display it at the top of the list
 - Must be responsive
+
+### Check out the live demo [here](https://georgegipa.github.io/PokemonWebApp/)
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
