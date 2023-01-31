@@ -14,12 +14,16 @@ The application should have the following features:
 
 To run the project, you need to have Node.js installed on your machine. You can download it from [here](https://nodejs.org/en/download/).
 
-Once you have Node.js installed, you can run the following commands in the project directory:
+Once you have Node.js installed, you can run the following commands in the project directory.
 
 ### `npm install`
 
-Installs all the dependencies required for the project and runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Installs all the dependencies required for the project and runs the app in the development mode.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Technologies used
 
