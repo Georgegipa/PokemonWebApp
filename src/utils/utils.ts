@@ -3,13 +3,13 @@ export function autoCapitalize(str: string) {
 }
 
 export function decimetersToMeters(decimeters: number) {
-    return decimeters / 10;
+  return decimeters / 10;
 }
 
 export function hectogramsToKilos(meters: number) {
-    return meters / 10;
+  return meters / 10;
 }
 
 export function removeMinusSign(str: string) {
-    return str.replace("-"," ");
+  return str.replace("-", " ");
 }

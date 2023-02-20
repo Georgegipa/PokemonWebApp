@@ -26,7 +26,6 @@ const PokeCard: React.FC<Pokemon> = (pokemon) => {
           image={pokemon.image}
         />
         <Box display="flex" alignItems="center" justifyContent="center">
-          {/* add a red underline */}
           <Typography align="center" variant="h5">
             {isFavorite()}
             {autoCapitalize(pokemon.name)}

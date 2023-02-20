@@ -2,12 +2,6 @@ import * as React from "react";
 import { Chip } from "@mui/material";
 
 const getColorForType = (color: string) => {
-  //convert to string if not already and remove quotes
-  if (typeof color !== "string") {
-    color = String(color);
-    color = color.replace(/['"]+/g, "");
-  }
-
   switch (color) {
     case "normal":
       return "grey";

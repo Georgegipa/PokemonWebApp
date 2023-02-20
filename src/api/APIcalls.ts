@@ -20,7 +20,7 @@ async function fetchPokemonData(pokeURL: string): Promise<Pokemon> {
     weight: data.weight,
     height: data.height,
     types: data.types.map((type: any) => {
-      return [type.type.name];
+      return type.type.name;
     }),
     stats: data.stats.map((stat: any) => {
       return [stat.stat.name,stat.base_stat];
